@@ -1,0 +1,48 @@
+<mvc:View controllerName="demo.selectDialog.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<f:Form>
+							<f:layout>
+								<f:ResponsiveGridLayout labelSpanL="2" labelSpanM="2" emptySpanL="1" emptySpanM="1" columnsL="1" columnsM="1"/>
+							</f:layout>
+							<f:formContainers>
+								<f:FormContainer>
+									<f:formElements>
+										<f:FormElement>
+											<Text id="text1" text="City">
+												<layoutData>
+												<l:GridData span="L1 M1 S1" linebreak="true"></l:GridData>
+											</layoutData>
+											</Text>
+											<Input id="input1" showValueHelp="true" valueHelpRequest="onHelpRequest" showSuggestion="true" >
+												<layoutData>
+												<l:GridData span="L3 M3 S3" linebreak="false"></l:GridData>
+											</layoutData>
+											</Input>
+										</f:FormElement>
+										<f:FormElement>
+											<Text id="text2" text="Country">
+												<layoutData>
+												<l:GridData span="L1 M1 S1" linebreak="true"></l:GridData>
+											</layoutData>
+											</Text>
+											<Input id="input2" showValueHelp="true" valueHelpRequest="onHelpRequest">
+												<layoutData>
+												<l:GridData span="L3 M3 S3" linebreak="false"></l:GridData>
+											</layoutData>
+											</Input>
+										</f:FormElement>
+									</f:formElements>
+								</f:FormContainer>
+							</f:formContainers>
+						</f:Form>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

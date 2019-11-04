@@ -1,8 +1,8 @@
 sap.ui.define([
 	"sap/ui/core/mvc/Controller"
 ], function (Controller) {
-//	"use strict";
-
+	"use strict";
+   // var input;
 	return Controller.extend("demo.selectDialog.controller.View1", {
 		onHelpRequest : function(oEvent){
 			var oDialog = new sap.ui.xmlfragment("demo.selectDialog.fragments.helpDialog",this);
@@ -28,10 +28,12 @@ sap.ui.define([
 			
 			oDialog.open();
 			
-		}
-		/*onSelection : function(oParams){
+		},
+		onSelection : function(oParams){
 			var selOptn = oParams.getParameters().selectedItem.getTitle();
-			//this.getView().byId("input1").setValue(selOptn);
-		}*/
+			this.getView().byId("input1").setValue(selOptn);
+		
+			
+		}
 	});
 });
